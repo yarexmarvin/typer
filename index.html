@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>TYPER</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="header">Typer</h1>
+
+        <div class="titles">
+            <div class="title_condition">
+                <p class="game_over display_none">Game Over</p>
+                <p class="game_start display_flex">Type "start" to play</p>
+                <p class="current_word"></p>
+            </div>
+            <div class='timer'>
+                <p class="timer_inner">0</p>
+                <p class="timer_title">s</p>
+            </div>
+        </div>
+
+        <div class="input">
+            <input type="text" class="input_inner" placeholder='type "start" '>
+        </div>
+        <div class="current_score">
+            <p class="current_score_title">Score = </p>
+            <p class="current_score_number"></p>
+        </div>
+        <div class="best_score">
+            <p class="best_score_title">highscore =</p>
+            <p class="best_score_number"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
