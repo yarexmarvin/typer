@@ -92,7 +92,8 @@ function gameOver() {
     endScore.sort(function(a, b) { return a - b })
     bestScore.innerHTML = endScore[endScore.length - 1];
     score = 0;
-
+input.removeAttribute('placeholder');
+    input.setAttribute('placeholder','type "start"' );
     gameStartTitle.classList.remove('display_none');
     gameOverTitle.classList.remove('display_none');
     currentWordTitle.innerHTML = '';
