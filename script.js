@@ -66,6 +66,8 @@ function start() {
 function game() {
     let randomNumber = Math.floor(Math.random() * words.length);
     currentWord = words[randomNumber];
+    input.removeAttribute('placeholder');
+    input.setAttribute('placeholder',`type "${words[randomNumber]}"` );
     console.log(randomNumber);
     currentWordTitle.innerHTML = currentWord;
 }
